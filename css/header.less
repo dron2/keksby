@@ -1,0 +1,66 @@
+.header{
+    background: url("../images/header-bg.jpg") no-repeat;
+    background-size: cover;
+
+    .wrapper{
+        margin: 0 auto;
+        padding-top: 35px;
+        .size(@wrapper; 525px);
+    }
+
+    &-top{
+        &::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+
+    &-logo{
+        float: left;
+        .size(205px; 55px);
+    }
+
+    &-nav{
+        float: left;
+        margin-left: 125px;
+        vertical-align: middle;
+
+        ul{
+            list-style: none;
+        }
+
+        li{
+            float: left;
+            padding-top: 15px;
+            margin-left: 50px;
+            height: 55px;
+            &:first-child{
+                margin: 0;
+            }
+        }
+
+        a{
+            .text(18px; 24px);
+            text-transform: uppercase;
+            text-decoration: none;
+            color: @header-text-color;
+        }
+    }
+    
+    .btn{
+        .btn(@header-text-color);
+        float: right;
+    }
+
+    &-title{
+        .text(45px; 55px);
+        display: block;
+        margin-top: 135px;
+        width: 100%;
+        font-family: "Georgia", serif;
+        text-align: center;
+        font-weight: bold;
+        color: @header-text-color;
+    }
+}

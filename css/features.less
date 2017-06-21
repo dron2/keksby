@@ -1,0 +1,49 @@
+.features{
+    .wrapper{
+        .size(@wrapper);
+        margin: 0 auto;
+    }
+
+    ul{
+        list-style: none;
+        padding: 50px 0;
+        &::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+
+    li{
+        .size(33%; 200px);
+        float: left;
+        padding-top: 95px;
+        border-left: 1px solid #aab2b5;
+
+        &:first-child{
+            border: none;
+        }
+    }
+
+    h2{
+        .text(30px; 30px);
+        text-align: center;
+        font-family: "Georgia", serif;
+        color: @brown-color;
+    }
+
+    p{
+        .text(16px, 24px);
+        margin: 20px auto 0;
+        width: 280px;
+        text-align: center;
+        color: @dark-color;
+    }
+}
+.feature-image(@n) when (@n <= 3){
+    .feature-@{n}{
+        background: url("../images/feature-@{n}.png") no-repeat center top;
+    }
+    .feature-image(@n + 1);
+}
+.feature-image(1);
