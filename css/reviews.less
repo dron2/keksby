@@ -1,0 +1,39 @@
+.reviews{
+    .wrapper{
+        margin: 0 auto;
+        padding: 70px 0;
+        width: @wrapper;
+    }
+
+    .btn{
+        .btn(empty, @brown-color);
+        float: right;
+    }
+
+    h2{
+        .text(45px; 55px);
+        margin-bottom: 50px;
+        font-family: "Georgia", serif;
+        color: @brown-color;
+    }
+}
+
+.review{
+    float: left;
+    padding-left: 50px;
+    padding-right: 100px;
+    width: 50%;
+    border-left: 3px solid @brown-color;
+
+    p{
+        .text(16px; 24px);
+        margin-bottom: 15px;
+        color: @dark-color;
+    }
+
+    .author{
+        font-weight: bold;
+        font-style: italic;
+        color: @black-color;
+    }
+}

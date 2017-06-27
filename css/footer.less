@@ -1,0 +1,88 @@
+.footer{
+    background-color: @footer-bg;
+
+    .wrapper{
+        margin: 0 auto;
+        width: @wrapper;
+    }
+
+    .logo{
+        float: left;
+    }
+
+    .btn{
+        .btn(empty, @footer-color);
+        float: right;
+    }
+
+    &-top{
+        padding: 50px 0;
+        border-bottom: 1px solid @footer-color;
+    }
+
+    &-nav{
+        padding: 50px 0;
+
+        .title{
+            .text(24px; 30px);
+            color: @brown-color;
+            font-family: "Georgia", serif;
+        }
+
+        ul{
+            float: left;
+            width: 170px;
+            list-style: none;
+        }
+
+        li{
+            padding: 7px 0;
+        }
+
+        a{
+            .text(16px; 20px);
+            text-decoration: none;
+            color: @footer-color;
+            &:hover{
+                color: lighten(@footer-color, 20%);
+            }
+        }
+    }
+
+    &-bottom{
+        padding: 20px 0;
+        .social{
+            float: left;
+
+            span{
+                .text(24px; 50px);
+                float: left;
+                color: @brown-color;
+            }
+
+            a{
+                .text(0; 0);
+                .size(62px; 62px);
+                float: left;
+                margin-left: 20px;
+                border: 1px solid @footer-color;
+                background: url("../images/sprite.png") no-repeat;
+                &:hover{
+                    border-color: @brown-color;
+                }
+            }
+
+            .vk{
+                background-position: -3px -80px;
+            }
+
+            .fb{
+                background-position: -3px -153px;
+            }
+
+            .inst{
+                background-position: -6px -228px;
+            }
+        }
+    }
+}

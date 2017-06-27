@@ -1,0 +1,73 @@
+.feedback{
+    .wrapper{
+        width: @wrapper;
+        margin: 0 auto;
+        padding: 60px 0;
+        background: url("../images/feadback.jpg") no-repeat right 120px;
+    }
+    
+    .title{
+        .text(45px; 55px);
+        font-family: "Georgia", serif;
+        color: @brown-color;
+    }
+
+    .signature{
+        .text(16px; 24px);
+        padding: 5px 0;
+        float: right;
+        color: @dark-color;
+    }
+}
+
+.form{
+    padding-top: 70px;
+    width: 630px;
+    color: @dark-color;
+
+    label{
+        .text(12px; 16px);
+        display: block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        text-transform: uppercase;
+    }
+
+    & > label{
+        &:first-child{
+            margin: 0;
+        }
+    }
+
+    input[type=text],
+    textarea{
+        .text(18px; 18px);
+        padding: 15px;
+        width: 100%;
+        border: 2px solid #eee;
+
+        &:focus{
+            border-color: @brown-color;
+        }
+    }
+
+    textarea{
+        resize: vertical;
+    }
+
+    &-phone{
+        float: left;
+        width: 290px;
+    }
+
+    &-mail{
+        float: right;
+        width: 290px;
+    }
+
+    .btn{
+        .btn(bg, @brown-color);
+        margin-top: 50px;
+        cursor: pointer;
+    }
+}
